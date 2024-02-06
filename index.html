@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body>
+
+
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Portafolio</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/perfil.jpg" alt="">
+            </div>
+            <h1>Carlos Canales</h1>
+            <h2 class="animate-text" id="animate-text">Ingeniero en Sistemas - programador</h2>
+            <div class="redes">
+                <a href="mailto:carloscanales722@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://wa.me/95491741" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/carlos.canales.1428/" target="_blank"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/c-canales/" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola,</span> Soy un estudiante motivado en busca de oportunidades que me permitan aplicar y
+                desarrollar mis habilidades. A lo largo de mi trayectoria académica, he adquirido conocimientos sólidos
+                en Programación, bases de datos, manejo de sistemas, office etc; respaldados por proyectos académicos
+                que demuestran mi capacidad para cumplir mis objetivos.
+                <BR><BR>
+                Además de mis habilidades técnicas, poseo fuertes habilidades blandas, como la capacidad de trabajar en
+                equipo, comunicarme efectivamente y abordar desafíos con un enfoque proactivo. Soy una persona orientada
+                a resultados y estoy dispuesto a aprender y adaptarme rápidamente a nuevas situaciones.
+                <BR><BR>
+                Estoy emocionado por la oportunidad de ser parte de un equipo dinámico y aportar mi entusiasmo y
+                dedicación.
+            </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>fecha de nac.</strong>
+                            17-07-1997
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            95491741
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            carloscanales722@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Colonia Cerrito Lindo, sector Rivera
+                            Hernandez, San Pedro Sula, Honduras
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Ingeniero de Sistemas</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <center>
+                        <h3>Intereses</h3>
+                    </center>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-computer"></i>
+                            <span>Tecnología</span>
+                        </div>
+
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>VIAJAR</span>
+                        </div>
+
+                        <div class="interes">
+                            <i class="fa-solid fa-futbol"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-chalkboard"></i>
+                            <span>Voluntariado</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <a href="doc/CurrículumCarlos.pdf" download="Currículum.pdf">
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+
+
+
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilidades técnicas</h3>
+                    <div class="skill">
+                        <span>Desarrollo Web</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Cloud Computing</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Bases de Datos</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Redes y Comunicaciones</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Sistemas Operativos</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Habilidades blandas</h3>
+                    <div class="skill">
+                        <span>Comunicación efectiva</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>96%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Resolución de Problemas</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>92%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Adaptabilidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>97%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Liderazgo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Sistema Web para rescate de animales</h4>
+                        <span class="casa">UTH</span>
+                        <span class="fecha">2021</span>
+                        <p>Desarrollé y lideré la implementación de un sistema web integral dedicado al rescate y
+                            gestión de animales abandonados. Este proyecto incluyó:
+
+                            <strong>Registro de Animales:</strong> Creación de un sistema para registrar información
+                            detallada sobre animales, incluyendo características,y fotografías. <br>
+                            <strong>Gestión de Usuarios: </strong>Implementación de un módulo de registro y
+                            autenticación para voluntarios, adoptantes y personal del refugio. <br>
+                            <strong>Adopciones en Línea:</strong> Facilité el proceso de adopción en línea que permite a
+                            los usuarios solicitar la adopción de animales. <br>
+                            <strong> Alertas y Notificaciones:</strong>Incorporé un sistema de alertas para informar a
+                            los usuarios sobre animales en peligro.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Desarrollo de Soluciones para Instituciones Educativas</h4>
+                        <span class="casa">UTH</span>
+                        <span class="fecha">2021</span>
+                        <p>Conceptualicé, diseñé e implementé un sistema completo de gestión escolar, abarcando desde el
+                            registro de alumnos hasta la organización eficiente de aulas y horarios. Este proyecto
+                            incluyó:<br>
+
+                            <strong>Gestión de Información Estudiantil:</strong> Desarrollé una interfaz intuitiva para
+                            el registro y actualización de información de los estudiantes, incluyendo datos personales,
+                            expedientes académicos y detalles de contacto. <br>
+
+                            <strong>Registro de Matrículas:</strong> Implementé un módulo que permitía el fácil registro
+                            y seguimiento de la matriculación de nuevos estudiantes, optimizando el flujo de trabajo
+                            administrativo.<br>
+
+                            <strong>Asignación de Aulas y Horarios:</strong> Facilité la asignación eficiente de aulas y
+                            horarios, permitiendo una distribución equitativa y organizada de las clases.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Empresario Independiente</h4>
+                        <span class="casa">Cibernet CV</span>
+                        <span class="fecha">2020 - 2022</span>
+                        <p>Inicié y gestioné con éxito mi propio negocio especializado en servicios de copiado, creación
+                            e impresión de documentos. <br>
+                            Desarrollé estrategias efectivas de marketing y promoción para atraer a la clientela,
+                            resultando en un aumento constante de clientes y ventas.
+                            <br>
+                            Ofrecí atención al cliente excepcional, comprendiendo y abordando las necesidades
+                            específicas de cada cliente. <br>
+                            Manejé eficientemente las consultas, resolví problemas y aseguré la entrega puntual de los
+                            proyectos, ganando la confianza y fidelidad de los clientes.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Servicios Tecnológicos Independientes</h4>
+                        <p>Proporcioné servicios independientes de mantenimiento y reparación de equipos tecnológicos a clientes locales.  <br>
+
+                            Diagnóstico y solución de problemas en computadoras, laptops, impresoras y otros dispositivos electrónicos.
+                          
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/TF.jpg" alt="">
+                    <a href="https://torre-fuerte-app-frontend.onrender.com/" target="_blank">
+                        <div class="overlay">
+                            <h3>Misnisterio Torre Fuerte </h3>
+                            <p>Sitio web</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Se Subirá pronto</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Se Subirá pronto</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Se Subirá pronto</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Se Subirá pronto</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Se Subirá pronto</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d961.333726823836!2d-87.94426213053876!3d15.466407499070565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2shn!4v1707065485617!5m2!1ses!2shn"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Honduras, San Pedro, Cerrito Lindo
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Teléfono: 95491741
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                correo: carloscanales722@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="mailto:carloscanales722@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://wa.me/95491741" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/carlos.canales.1428/" target="_blank"><i
+                    class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/c-canales/" target="_blank"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
